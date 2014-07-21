@@ -1,0 +1,86 @@
+@import "mixins";
+
+body {
+    background-color: $dark-grey;
+    
+    #wrapper {
+        
+        
+        
+        .groove {
+            background: url('../images/handle_bg.png') no-repeat center center;
+            height: 531px;
+            width: 530px;
+            overflow: hidden;
+            margin: 0 auto;
+            
+            .volUp {
+                background: url('../images/volume_up.png') no-repeat center center;
+                width: 79px;
+                height: 66px;
+                margin: 40px auto 0;
+                
+                &:active {
+                    background: url('../images/volume_up_press.png') no-repeat center center;
+                }
+            }
+            
+            .midRow {
+                clear: both;
+                
+                .prev {
+                    background: url('../images/ch_prev.png') no-repeat center center;
+                    height: 68px;
+                    width: 60px;
+                    margin: 128px 0 0 52px;
+                    float: left;
+                    
+                    &:active {
+                        background: url('../images/ch_prev_press.png') no-repeat center center;
+                    }
+                }
+                
+                .play {
+                    background: url('../images/center_ball.png') no-repeat center center;
+                    height: 218px;
+                    width: 218px;
+                    float: left;
+                    margin: 70px 0 0 45px;
+                    
+                    &:active {
+                        background: url('../images/center_ball_press.png') no-repeat center center;
+                    }
+                }
+                
+                .next {
+                    background: url('../images/ch_next.png') no-repeat center center;
+                    height: 68px;
+                    width: 60px;
+                    float: left;
+                    margin: 128px 0 0 29px;
+                    
+                    &:active {
+                        background: url('../images/ch_next_press.png') no-repeat center center;
+                    }
+                }
+            }
+            
+            .volDown {
+                background: url('../images/volume_down.png') no-repeat center center;
+                width: 48px;
+                height: 66px;
+                margin: 27px auto 0;
+                
+                &:active {
+                        background: url('../images/volume_down_press.png') no-repeat center center;
+                    }
+            }
+        }
+    }
+    
+    .clearfix:after {
+        content:"";
+        display:table;
+        clear:both
+    }
+}
